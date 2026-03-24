@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import Image from "next/image";
 
 export default function Ministries() {
   return (
@@ -58,23 +59,14 @@ export default function Ministries() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-sky-200 to-sky-300 rounded-2xl aspect-[4/3] flex items-center justify-center shadow-xl">
-                <div className="text-center text-sky-700/60">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-                    />
-                  </svg>
-                  <p className="text-sm font-medium">Music Ministry Photo</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
+                <Image
+                  src="/images/congregation.jpg"
+                  alt="FBCW Music Ministry ensemble"
+                  width={750}
+                  height={563}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

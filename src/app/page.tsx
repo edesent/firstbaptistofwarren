@@ -5,21 +5,17 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-sky-500 via-sky-600 to-sky-900 overflow-hidden">
-        {/* Animated background shapes */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-sky-400/20 rounded-full blur-3xl" />
-          <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-sky-300/10 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sky-500/10 rounded-full blur-3xl" />
-        </div>
-
-        {/* Cross pattern overlay */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-1 h-24 bg-white" />
-          <div className="absolute top-28 left-12 w-24 h-1 bg-white" />
-          <div className="absolute bottom-32 right-32 w-1 h-20 bg-white" />
-          <div className="absolute bottom-40 right-24 w-20 h-1 bg-white" />
-        </div>
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="/images/pastor-preaching.jpg"
+          alt="Pastor preaching at First Baptist Church"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark blue overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-900/80 via-sky-800/70 to-sky-950/85" />
 
         <div className="relative text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md rounded-full px-5 py-2.5 mb-8 border border-white/20">

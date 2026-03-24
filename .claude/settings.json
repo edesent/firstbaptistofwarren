@@ -10,7 +10,8 @@
       "Bash(xargs kill:*)",
       "Bash(curl -sL \"https://images.squarespace-cdn.com/content/v1/56dcc9e97da24f56fb1d0df5/1457385258471-SF7E64XQPDJ4ZUW0IWU8/IMAG0124.jpg?format=750w\" -o /Users/elijahdesent/firstbaptistofwarren/public/images/church-1.jpg)",
       "Bash(gh auth:*)",
-      "Bash(gh repo:*)"
+      "Bash(gh repo:*)",
+      "WebFetch(domain:www.facebook.com)"
     ]
   }
 }
