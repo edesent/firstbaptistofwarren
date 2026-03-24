@@ -187,7 +187,7 @@ export default function Home() {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-sky-600 text-white rounded-xl p-5 shadow-xl">
-                <div className="text-3xl font-bold">Est.</div>
+                <div className="text-3xl font-bold">Est. 1857</div>
                 <div className="text-sky-200 text-sm">
                   Warren, MI Historical District
                 </div>
