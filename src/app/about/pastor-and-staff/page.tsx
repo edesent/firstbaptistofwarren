@@ -1,28 +1,33 @@
 import PageHero from "@/components/PageHero";
+import Image from "next/image";
 
 const staff = [
   {
     name: "Pastor Jason Hamilton",
     role: "Pastor",
     email: "pastor@fbcwmich.org",
+    photo: "/images/pastor-hamilton.webp",
     bio: "Pastor Jason Hamilton leads our congregation with a heart for God's Word and a passion for reaching the lost with the Gospel.",
   },
   {
     name: "Aaron Buczek",
     role: "Director of Vocal Music",
     email: "music@fbcwmich.org",
+    photo: "/images/aaron-buczek.webp",
     bio: "Aaron conducts the Chorus and sings baritone with the Men's Ensemble. He teaches middle school band in Plymouth and has attended the church since spring 2009.",
   },
   {
     name: "Mrs. Diana Hamilton",
     role: "Director of Instrumental Music",
     email: null,
+    photo: "/images/diana-hamilton.webp",
     bio: "Diana provides piano accompaniment for Sunday and Wednesday services. She has been a faithful member since 2002.",
   },
   {
     name: "Bill Proulx",
     role: "Treasurer",
     email: "treasurer@fbcwmich.org",
+    photo: "/images/bill-proulx.webp",
     bio: "Bill faithfully serves our congregation by managing the church's financial stewardship.",
   },
 ];
@@ -43,21 +48,14 @@ export default function PastorAndStaff() {
                 key={member.name}
                 className="bg-sky-50/50 rounded-2xl p-8 border border-sky-100 hover:shadow-lg transition-shadow"
               >
-                {/* Placeholder avatar */}
-                <div className="w-24 h-24 bg-gradient-to-br from-sky-300 to-sky-400 rounded-full flex items-center justify-center mb-5 shadow-lg">
-                  <svg
-                    className="w-12 h-12 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    />
-                  </svg>
+                <div className="w-32 h-32 rounded-full overflow-hidden mb-5 shadow-lg">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={256}
+                    height={256}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="font-bold text-sky-900 text-xl mb-1">
                   {member.name}
