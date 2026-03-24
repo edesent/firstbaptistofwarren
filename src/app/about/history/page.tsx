@@ -14,24 +14,24 @@ export default function History() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-2xl font-bold text-sky-900 mb-6">
-                Our Story
+                Our Building
               </h2>
               <div className="prose prose-slate prose-lg">
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  First Baptist Church of Warren is located in the Historical
-                  District of Warren, Michigan. As an Independent Fundamental
-                  Baptist Church, we have been faithfully serving our community
-                  and proclaiming the Gospel of Jesus Christ.
+                  The First Baptist Church of Warren, Michigan is located on
+                  31707 7th Street, at the corner of 7th and Fillmore.
                 </p>
                 <p className="text-slate-600 leading-relaxed mb-4">
-                  Our church has been a cornerstone of the Warren community,
-                  welcoming families and individuals seeking to grow in their
-                  faith and fellowship with like-minded believers.
+                  Our white frame pioneer-style church was built in 1857 — one
+                  of the oldest buildings in the city of Warren, and one of the
+                  oldest church buildings in the State of Michigan. The
+                  structure, as it stands, is of the original construction and
+                  materials.
                 </p>
                 <p className="text-slate-600 leading-relaxed">
-                  We continue our mission of evangelizing individuals and
-                  teaching biblical obedience, carrying forward the rich
-                  tradition of faithful Baptist ministry.
+                  The church was originally located in the Union Cemetery on
+                  Chicago Road, and was moved in 1888 to its present location
+                  on 7th and Fillmore Street.
                 </p>
               </div>
             </div>
