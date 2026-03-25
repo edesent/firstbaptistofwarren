@@ -2,40 +2,49 @@ import PageHero from "@/components/PageHero";
 
 const beliefs = [
   {
-    title: "Biblical Authority",
-    text: "We believe the whole Bible from Genesis 1:1 to Revelation 22:21 as the verbally inspired and infallible Word of God.",
+    title: "The Word of God",
+    text: 'We believe the whole Bible from Genesis 1:1 to Rev. 22:21 as the verbally inspired and infallible WORD OF GOD.',
+    verse: "II Tim. 3:16",
   },
   {
-    title: "The Incarnation",
-    text: "We believe that Jesus was born of the Virgin Mary and represents both God's Son and God in human form.",
+    title: "The Virgin Birth",
+    text: "We believe Jesus was born of Mary the Virgin, and is the Son of God and God the Son.",
+    verse: "Luke 1:35",
   },
   {
     title: "The Atonement",
-    text: "We believe that Christ's sacrificial death satisfied divine justice for humanity's transgressions.",
+    text: "We believe that Christ died for our sins according to the Scriptures, the Just of the unjust that He might bring us to God.",
+    verse: "I Pet. 3:18",
   },
   {
     title: "The Resurrection",
-    text: "We believe that Jesus physically rose on the third day after crucifixion.",
+    text: "We believe that Christ rose from the grave the third day according to the Scriptures.",
+    verse: "I Cor. 15:3-4",
   },
   {
     title: "Christ's Intercession",
-    text: "We believe that Jesus alone serves as the ultimate high priest without need for human mediators.",
+    text: "We believe that He only, is the great High Priest, and we need not the intercession of any man, but that Christ ever liveth to make intercession for us.",
+    verse: "Heb. 7:25",
   },
   {
     title: "The Second Coming",
-    text: "We believe that Christ will return bodily to rapture believers before tribulation, then establish a thousand-year earthly kingdom.",
+    text: "We believe that Christ will come again in person, to rapture all believers before the Great Tribulation, and shall return in person, bodily, visibly, to establish His Kingdom on the earth for 1000 years.",
+    verse: "Acts 1:11",
   },
   {
-    title: "Spiritual Rebirth",
-    text: "We believe that salvation requires personal spiritual transformation through faith.",
+    title: "The New Birth",
+    text: 'We believe that in order to be saved, a person must be born again — "Ye must be born again."',
+    verse: "John 3:3-7",
   },
   {
     title: "Baptism",
-    text: "We believe that believers should practice water immersion baptism as a public declaration symbolizing Christ's death, burial, and resurrection.",
+    text: "We believe that every truly born again person should declare his faith by the act of baptism (immersion in water) setting forth the Lord's death, burial and resurrection.",
+    verse: "Acts 2:41",
   },
   {
     title: "The Church's Mission",
-    text: "We believe the congregation's primary purpose involves evangelizing individuals and teaching biblical obedience.",
+    text: 'We believe that the Church is a body of baptized believers whose only mission is, not to "reform the world," but to preach and teach the Gospel of salvation to the individual person, and teach them to "observe all things what-soever I have commanded you."',
+    verse: "Matt. 28:18-20",
   },
 ];
 
@@ -64,6 +73,9 @@ export default function StatementOfFaith() {
                   </h3>
                   <p className="text-slate-600 leading-relaxed">
                     {belief.text}
+                  </p>
+                  <p className="text-sky-600 font-semibold mt-2">
+                    {belief.verse}
                   </p>
                 </div>
               </div>

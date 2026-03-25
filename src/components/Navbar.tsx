@@ -97,6 +97,12 @@ export default function Navbar() {
               Gallery
             </Link>
             <Link
+              href="/give"
+              className="px-4 py-2 rounded-lg text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-medium transition-colors"
+            >
+              Give Online
+            </Link>
+            <Link
               href="/contact"
               className="ml-2 px-5 py-2.5 bg-sky-600 text-white rounded-lg hover:bg-sky-700 font-medium transition-colors shadow-md hover:shadow-lg"
             >
@@ -180,6 +186,13 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
           >
             Gallery
+          </Link>
+          <Link
+            href="/give"
+            className="block py-3 text-slate-700 hover:text-sky-700 font-medium border-b border-slate-100"
+            onClick={() => setMobileOpen(false)}
+          >
+            Give Online
           </Link>
           <Link
             href="/contact"
