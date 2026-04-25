@@ -216,7 +216,7 @@ export default function Home() {
                 desc: "Our music ministry features a chorus, men's ensemble, and instrumental accompaniment for all services.",
                 icon: "M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3",
                 link: "/about/pastor-and-staff",
-                linkLabel: "Meet our staff",
+                linkLabel: "Meet our Ministry Team",
               },
               {
                 title: "Bible Study",
@@ -323,6 +323,156 @@ export default function Home() {
           >
             Learn God&apos;s Plan of Salvation
           </Link>
+        </div>
+      </section>
+
+      {/* Meet Our Ministry Team */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <div className="text-sky-600 text-sm font-semibold uppercase tracking-wider mb-2">
+              Serving Together
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-4">
+              Meet Our Ministry Team
+            </h2>
+            <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+              The faithful servants who help our church family thrive
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Pastor — Featured */}
+            <Link
+              href="/about/pastor-and-staff"
+              className="group lg:row-span-2 relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
+            >
+              <div className="aspect-[4/5] lg:aspect-auto lg:h-full relative">
+                <Image
+                  src="/images/jason-hamilton.jpg"
+                  alt="Pastor Jason Hamilton"
+                  fill
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-sky-950/95 via-sky-900/40 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <div className="inline-flex items-center gap-2 bg-amber-400/90 text-sky-950 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
+                    Our Pastor
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">
+                    Pastor Jason Hamilton
+                  </h3>
+                  <p className="text-sky-200 mb-3">
+                    Leading FBC since 2019
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                    Read his story
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Staff Grid */}
+            {[
+              {
+                name: "Bro. Aaron Buczek",
+                role: "Director of Vocal Music",
+                photo: "/images/aaron-buczek.jpg",
+              },
+              {
+                name: "Sis. Diana Hamilton",
+                role: "Director of Instrumental Music",
+                photo: "/images/diana-hamilton.jpg",
+              },
+              {
+                name: "Bro. Bill Proulx",
+                role: "Church Treasurer",
+                photo: "/images/bill-proulx.jpg",
+              },
+              {
+                name: "Sis. Sherry Dusik",
+                role: "Church Secretary",
+                photo: "/images/sherry-dusik.jpg",
+              },
+              {
+                name: "Sis. Jennifer Tracy",
+                role: "Social Media Ministry",
+                photo: "/images/jennifer-tracy.jpg",
+              },
+              {
+                name: "Paul & Dolores Roman",
+                role: "Music Librarian & Trumpet",
+                photo: "/images/paul-dolores-roman.jpg",
+              },
+              {
+                name: "Chris & Tiffany Lemorie",
+                role: "Food Ministry",
+                photo: "/images/chris-tiffany-lemorie.jpg",
+              },
+              {
+                name: "Sis. Rhonda Edgil",
+                role: "Hospitality Ministry",
+                photo: "/images/rhonda-edgil.jpg",
+              },
+            ].map((member) => (
+              <Link
+                key={member.name}
+                href="/about/pastor-and-staff"
+                className="group flex items-center gap-4 bg-sky-50/60 rounded-xl p-4 border border-sky-100 hover:bg-white hover:shadow-lg hover:border-sky-200 transition-all"
+              >
+                <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 ring-2 ring-white shadow-md">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="font-bold text-sky-900 text-sm leading-tight truncate">
+                    {member.name}
+                  </h4>
+                  <p className="text-sky-600 text-xs mt-0.5">{member.role}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/about/pastor-and-staff"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-sky-600 text-white rounded-lg font-medium hover:bg-sky-700 transition-colors shadow-md"
+            >
+              See Full Team Bios
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 

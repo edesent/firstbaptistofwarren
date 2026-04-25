@@ -172,16 +172,16 @@ export default function PastorAndStaff() {
                 className="group bg-white rounded-2xl border border-sky-100 overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 duration-300"
               >
                 <div className="flex flex-col sm:flex-row">
-                  <div className="sm:w-2/5 aspect-square sm:aspect-auto relative overflow-hidden bg-sky-50">
+                  <div className="sm:w-1/2 aspect-[4/5] sm:aspect-auto relative overflow-hidden bg-sky-50">
                     <Image
                       src={member.photo}
                       alt={member.name}
-                      width={500}
-                      height={500}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      width={600}
+                      height={750}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="sm:w-3/5 p-6 flex flex-col">
+                  <div className="sm:w-1/2 p-6 flex flex-col">
                     <h3 className="font-bold text-sky-900 text-xl mb-1 leading-tight">
                       {member.name}
                     </h3>
