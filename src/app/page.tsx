@@ -341,52 +341,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Pastor — Featured */}
-            <Link
-              href="/about/pastor-and-staff"
-              className="group lg:row-span-2 relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1"
-            >
-              <div className="aspect-[4/5] lg:aspect-auto lg:h-full relative">
-                <Image
-                  src="/images/jason-hamilton.jpg"
-                  alt="Pastor Jason Hamilton"
-                  fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-sky-950/95 via-sky-900/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="inline-flex items-center gap-2 bg-amber-400/90 text-sky-950 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
-                    Our Pastor
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">
-                    Pastor Jason Hamilton
-                  </h3>
-                  <p className="text-sky-200 mb-3">
-                    Leading FBC since 2019
-                  </p>
-                  <span className="inline-flex items-center gap-1 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                    Read his story
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </Link>
-
-            {/* Staff Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
+              {
+                name: "Pastor Jason Hamilton",
+                role: "Pastor",
+                photo: "/images/jason-hamilton.jpg",
+              },
               {
                 name: "Bro. Aaron Buczek",
                 role: "Director of Vocal Music",
