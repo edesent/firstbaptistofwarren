@@ -1,5 +1,6 @@
 import PageHero from "@/components/PageHero";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Ministries() {
   return (
@@ -58,6 +59,25 @@ export default function Ministries() {
                     </span>
                   </div>
                 </div>
+                <Link
+                  href="/about/pastor-and-staff"
+                  className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-sky-600 text-white rounded-lg font-medium hover:bg-sky-700 transition-colors shadow-md"
+                >
+                  Meet the Music Ministry Team
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
               </div>
               <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
                 <Image
