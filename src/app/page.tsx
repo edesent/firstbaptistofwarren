@@ -215,6 +215,8 @@ export default function Home() {
                 title: "Music Ministry",
                 desc: "Our music ministry features a chorus, men's ensemble, and instrumental accompaniment for all services.",
                 icon: "M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3",
+                link: "/about/pastor-and-staff",
+                linkLabel: "Meet our staff",
               },
               {
                 title: "Bible Study",
@@ -252,6 +254,27 @@ export default function Home() {
                 <p className="text-slate-500 leading-relaxed">
                   {ministry.desc}
                 </p>
+                {ministry.link && (
+                  <Link
+                    href={ministry.link}
+                    className="inline-flex items-center gap-2 mt-4 text-sky-600 font-semibold hover:text-sky-700 transition-colors"
+                  >
+                    {ministry.linkLabel}
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </Link>
+                )}
               </div>
             ))}
           </div>
