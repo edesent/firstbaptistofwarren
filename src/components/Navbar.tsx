@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const aboutLinks = [
@@ -21,8 +22,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo / Church Name */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-sky-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:bg-sky-700 transition-colors">
-              FBC
+            <div className="w-12 h-12 rounded-full overflow-hidden shadow-lg ring-2 ring-white group-hover:ring-sky-200 transition-all">
+              <Image
+                src="/images/fbc-logo.png"
+                alt="First Baptist Church of Warren"
+                width={96}
+                height={96}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <div className="font-bold text-sky-900 text-lg leading-tight">
