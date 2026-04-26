@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,8 +9,14 @@ export default function Footer() {
           {/* Church Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-sky-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                FBC
+              <div className="w-12 h-12 rounded-full overflow-hidden shadow-lg ring-2 ring-white/20">
+                <Image
+                  src="/images/fbc-logo.png"
+                  alt="First Baptist Church of Warren"
+                  width={96}
+                  height={96}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <div className="font-bold text-lg">First Baptist Church</div>
