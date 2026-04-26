@@ -91,6 +91,92 @@ export default function Ministries() {
             </div>
           </div>
 
+          {/* Live Stream / Online Ministry - Featured */}
+          <div className="bg-gradient-to-br from-sky-900 to-sky-700 rounded-2xl p-8 md:p-12 mb-12 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-sky-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-sky-400/10 rounded-full blur-3xl translate-y-1/2" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-red-500 text-white px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+                  <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
+                  Live Stream Ministry
+                </div>
+                <h2 className="text-3xl font-bold text-white mb-4">
+                  Worship With Us Online
+                </h2>
+                <p className="text-sky-100 text-lg leading-relaxed mb-4">
+                  Can&apos;t make it in person? Join us online! Our Social Media
+                  Ministry, led by Sis. Jennifer Tracy, livestreams our Sunday
+                  services and uploads sermons to YouTube so you can worship
+                  along with us from anywhere.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-sky-300 rounded-full" />
+                    <span className="text-sky-100">
+                      Sunday services streamed live
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-sky-300 rounded-full" />
+                    <span className="text-sky-100">
+                      Past sermons available on YouTube
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-sky-300 rounded-full" />
+                    <span className="text-sky-100">
+                      Weekly bulletin and updates on Facebook
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-3 mt-6">
+                  <Link
+                    href="/messages"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-sky-700 rounded-lg font-medium hover:bg-sky-50 transition-colors shadow-md"
+                  >
+                    <svg
+                      className="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                    Watch Recent Messages
+                  </Link>
+                  <a
+                    href="https://www.facebook.com/firstbaptistwarrenmichigan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-sky-700/40 backdrop-blur text-white rounded-lg font-medium hover:bg-sky-700/60 transition-colors border border-sky-300/30"
+                  >
+                    Watch on Facebook
+                  </a>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white/10 bg-black flex items-center justify-center relative">
+                  <Image
+                    src="/images/gallery/extra-pastor-preaching.jpg"
+                    alt="Pastor Hamilton preaching"
+                    fill
+                    className="object-cover opacity-80"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="relative w-20 h-20 rounded-full bg-white/95 flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="w-10 h-10 text-sky-600 ml-1"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Other Ministries Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
