@@ -107,26 +107,26 @@ export default function Ministries() {
                 <p className="text-sky-100 text-lg leading-relaxed mb-4">
                   Can&apos;t make it in person? Join us online! Our Social Media
                   Ministry, led by Sis. Jennifer Tracy, livestreams our Sunday
-                  services and uploads sermons to YouTube so you can worship
-                  along with us from anywhere.
+                  services to YouTube so you can worship along with us from
+                  anywhere.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-sky-300 rounded-full" />
                     <span className="text-sky-100">
-                      Sunday services streamed live
+                      Sunday services streamed live on YouTube
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-sky-300 rounded-full" />
                     <span className="text-sky-100">
-                      Past sermons available on YouTube
+                      Past sermons archived for replay anytime
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-sky-300 rounded-full" />
                     <span className="text-sky-100">
-                      Weekly bulletin and updates on Facebook
+                      Subscribe to be notified when we go live
                     </span>
                   </div>
                 </div>
@@ -145,12 +145,19 @@ export default function Ministries() {
                     Watch Recent Messages
                   </Link>
                   <a
-                    href="https://www.facebook.com/firstbaptistwarrenmichigan/"
+                    href="https://www.youtube.com/channel/UCfqlXoudXNhzwX6F_Sl1XYQ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 bg-sky-700/40 backdrop-blur text-white rounded-lg font-medium hover:bg-sky-700/60 transition-colors border border-sky-300/30"
                   >
-                    Watch on Facebook
+                    <svg
+                      className="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    Subscribe on YouTube
                   </a>
                 </div>
               </div>
