@@ -67,31 +67,46 @@ export default function Calendar() {
             ))}
           </div>
 
-          {/* Upcoming Events Placeholder */}
-          <h2 className="text-2xl font-bold text-sky-900 mb-8">
-            Upcoming Events
-          </h2>
-          <div className="bg-sky-50/50 rounded-2xl p-12 border border-sky-100 text-center">
-            <svg
-              className="w-16 h-16 text-sky-300 mx-auto mb-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Upcoming Events — Google Calendar embed */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+            <h2 className="text-2xl font-bold text-sky-900">Upcoming Events</h2>
+            <a
+              href="https://calendar.google.com/calendar/u/0/r?cid=fbcwmich@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-sky-600 text-white rounded-lg font-medium hover:bg-sky-700 transition-colors shadow-md"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-            <p className="text-slate-500 text-lg">
-              Check back soon for upcoming events and special services!
-            </p>
-            <p className="text-slate-400 mt-2">
-              Follow us on Facebook for the latest updates.
-            </p>
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+              Add to Your Calendar
+            </a>
           </div>
+          <div className="rounded-2xl overflow-hidden border border-sky-100 shadow-lg bg-white">
+            <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%234285F4&ctz=America%2FDetroit&src=ZmJjd21pY2hAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
+              width="100%"
+              height="700"
+              style={{ border: 0 }}
+              frameBorder="0"
+              scrolling="no"
+              title="First Baptist Church of Warren Calendar"
+            />
+          </div>
+          <p className="text-slate-500 text-sm mt-4 text-center">
+            Click the &ldquo;Add to Your Calendar&rdquo; button above to subscribe and
+            see our events alongside your own.
+          </p>
         </div>
       </section>
     </>

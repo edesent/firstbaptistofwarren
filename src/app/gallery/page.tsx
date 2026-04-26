@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 
 const recentPhotos = [
+  { src: "/images/gallery/extra-easter-service.jpg", caption: "A full sanctuary at FBC" },
   { src: "/images/gallery/extra-pastor-preaching.jpg", caption: "Pastor Hamilton preaching at FBC" },
   { src: "/images/gallery/extra-music-team.jpg", caption: "Our Music Ministry Team" },
   { src: "/images/gallery/extra-pastor-pulpit.jpg", caption: "Pastor at the pulpit" },
