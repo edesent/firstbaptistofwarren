@@ -93,6 +93,12 @@ export default function Navbar() {
               Ministries
             </Link>
             <Link
+              href="/messages"
+              className="px-4 py-2 rounded-lg text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-medium transition-colors"
+            >
+              Messages
+            </Link>
+            <Link
               href="/calendar"
               className="px-4 py-2 rounded-lg text-slate-700 hover:bg-sky-50 hover:text-sky-700 font-medium transition-colors"
             >
@@ -180,6 +186,13 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
           >
             Ministries
+          </Link>
+          <Link
+            href="/messages"
+            className="block py-3 text-slate-700 hover:text-sky-700 font-medium border-b border-slate-100"
+            onClick={() => setMobileOpen(false)}
+          >
+            Messages
           </Link>
           <Link
             href="/calendar"
