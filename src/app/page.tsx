@@ -178,7 +178,7 @@ export default function Home() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
                 <Image
-                  src="/images/church-1.jpg"
+                  src="/images/front-of-building.JPG"
                   alt="First Baptist Church of Warren building"
                   width={750}
                   height={563}
