@@ -11,7 +11,7 @@ const pastor = {
 
 const staff = [
   {
-    name: "Bro. Aaron Buczek",
+    name: "Bro. Aaron",
     role: "Director of Vocal Music",
     email: "music@fbcwmich.org",
     photo: "/images/aaron-buczek.jpg",
@@ -19,7 +19,7 @@ const staff = [
     bio: "Brother Aaron has been attending the First Baptist Church since 2009, and was appointed Director of Vocal Music by Pastor Parrish in 2011. In addition to directing the choir and various other vocal groups at FBC, Bro. Aaron plays bass and a variety of other instruments during Sunday worship, and also teaches Middle School Band.",
   },
   {
-    name: "Sis. Diana Hamilton",
+    name: "Sis. Diana",
     role: "Director of Instrumental Music",
     email: null,
     photo: "/images/diana-hamilton.jpg",
@@ -27,7 +27,7 @@ const staff = [
     bio: "Sister Diana currently serves as the Director of Instrumental Music at FBC, and plays piano at church services. Sis. Diana also has a passion for decorating and gardening, among other things, and is often seen working projects at the church. Sis. Diana has been attending FBC with her family faithfully since 2002.",
   },
   {
-    name: "Bro. Bill Proulx",
+    name: "Bro. Bill",
     role: "Church Treasurer",
     email: "treasurer@fbcwmich.org",
     photo: "/images/bill-proulx.jpg",
@@ -35,7 +35,7 @@ const staff = [
     bio: "Bro. Bill currently serves as the FBC Treasurer, a position he has held since March of 2021. In addition to his duties as treasurer, he has been singing tenor in the church choir and playing special music on the piano regularly since he started attending in 2010.",
   },
   {
-    name: "Sis. Sherry Dusik",
+    name: "Sis. Sherry",
     role: "Church Secretary",
     email: null,
     photo: "/images/sherry-dusik.jpg",
@@ -43,7 +43,7 @@ const staff = [
     bio: "Sister Sherry first started attending the First Baptist Church in 2024, and was appointed Church Secretary by Pastor Hamilton in November of 2025.",
   },
   {
-    name: "Sis. Jennifer Tracy",
+    name: "Sis. Jennifer",
     role: "Social Media Ministry Director",
     email: null,
     photo: "/images/jennifer-tracy.jpg",
@@ -51,7 +51,7 @@ const staff = [
     bio: "Sis. Jennifer currently serves as Director of the Social Media Ministry, running our livestream for services and editing videos on YouTube, and also edits the church bulletin. Sis. Jennifer has been an active member since moving back to Michigan in 2019, having attended previously with her family for many years.",
   },
   {
-    name: "Bro. Paul & Sis. Dolores Roman",
+    name: "Bro. Paul & Sis. Dolores",
     role: "Music Librarian & Trumpet",
     email: null,
     photo: "/images/paul-dolores-roman.jpg",
@@ -59,15 +59,15 @@ const staff = [
     bio: "Sis. Dolores has been serving as Music Librarian and singing alto in the church choir since September of 2021. In addition, her husband Paul can be heard playing his trumpet at FBC, which he has been doing for many years!",
   },
   {
-    name: "Bro. Chris & Sis. Tiffany Lemorie",
+    name: "Bro. Chris & Sis. Tiffany",
     role: "Food Ministry Directors",
     email: null,
     photo: "/images/chris-tiffany-lemorie.jpg",
     since: "Food Ministry since 2020",
-    bio: "Bro. Chris and Sis. Tiffany Lemorie have been directors of the FBC Food Ministry since 2020, preparing delicious meals for our church fellowships and other special events. In addition to cooking, the Lemories have been singing in the church choir since 2016.",
+    bio: "Bro. Chris and Sis. Tiffany have been directors of the FBC Food Ministry since 2020, preparing delicious meals for our church fellowships and other special events. In addition to cooking, they have been singing in the church choir since 2016.",
   },
   {
-    name: "Sis. Rhonda Edgil",
+    name: "Sis. Rhonda",
     role: "Hospitality Ministry Chair",
     email: null,
     photo: "/images/rhonda-edgil.jpg",
