@@ -96,7 +96,7 @@ export default function Contact() {
                     <h3 className="font-semibold text-sky-900 text-lg">
                       Email
                     </h3>
-                    <p className="text-slate-600">fbcwmich@gmail.com</p>
+                    <p className="text-slate-600">pastorjdhamilton@gmail.com</p>
                   </div>
                 </div>
               </div>
