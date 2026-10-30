@@ -178,6 +178,12 @@ export default function Footer() {
         <div className="border-t border-sky-800 mt-12 pt-8 text-center text-sky-300 text-sm">
           &copy; {new Date().getFullYear()} First Baptist Church of Warren,
           Michigan. All rights reserved.
+          <a
+            href="https://www.elijahdesent.com/church-website-design"
+            className="block mt-2 text-sky-400 hover:text-white transition-colors"
+          >
+            Church website design by Elijah Desent
+          </a>
         </div>
       </div>
     </footer>
